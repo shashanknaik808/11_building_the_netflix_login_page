@@ -2,6 +2,25 @@
   "dependencies": {
     "gulp": "^4.0.2",
     "gulp-autoprefixer": "^8.0.0",
-    "gulp-sass": "^5.1.0"
-  }
+    "gulp-sass": "^5.1.0",
+    "sass": "^1.62.1"
+  },
+  "name": "11_building_the_netflix_login_page",
+  "version": "1.0.0",
+  "description": "Practicing Flexbox & Building Devflix",
+  "main": "gulpfile.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shashanknaik808/11_building_the_netflix_login_page.git"
+  },
+  "author": "Shashank Naik",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/shashanknaik808/11_building_the_netflix_login_page/issues"
+  },
+  "homepage": "https://github.com/shashanknaik808/11_building_the_netflix_login_page#readme"
 }
