@@ -21,6 +21,11 @@ body {
     }
 }
 
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
 a {
     color: $gray2;
     text-decoration: none;
@@ -93,6 +98,41 @@ form {
                     top: .5rem;
                 }
             }
+        }
+    }
+
+    input[type="submit"] {
+        @include button($primary);
+        margin-top: 2rem;
+    }
+
+    .actions {
+        display: flex;
+        justify-content: space-between;
+        padding: .5rem 0;
+        margin-bottom: 6rem;
+    }
+}
+
+.bottom-content {
+    padding-bottom: 2rem;
+
+    @include tablet {
+        padding-top: 6rem;
+    }
+
+    a {
+        font-size: .8rem;
+        display: flex;
+    }
+
+    .new-user {
+        font-size: 1rem;
+        margin-top: 1rem;
+
+        span {
+            color: $white;
+            margin-left: .5rem;
         }
     }
 }
