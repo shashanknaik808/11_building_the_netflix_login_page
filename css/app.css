@@ -25,6 +25,11 @@ body {
   }
 }
 
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+
 a {
   color: #8c8c8c;
   text-decoration: none;
@@ -78,6 +83,24 @@ form .field span {
   text-transform: uppercase;
 }
 
+form .field span:hover {
+  cursor: pointer;
+}
+
+form .field label {
+  position: absolute;
+  top: 1.3rem;
+  left: 1rem;
+  font-size: .9rem;
+  -webkit-transition: font-size .2s ease, top .2s ease;
+  transition: font-size .2s ease, top .2s ease;
+}
+
+form .field label.valid {
+  font-size: .6rem;
+  top: .5rem;
+}
+
 form .field input {
   padding: 1.3rem 1rem .9rem 1rem;
   -webkit-box-flex: 1;
@@ -88,4 +111,49 @@ form .field input {
   border-radius: 5px;
   color: #FFFFFF;
   font-size: 1.2rem;
+}
+
+form .field input:focus {
+  background-color: #454545;
+}
+
+form .field input:focus+label {
+  font-size: .6rem;
+  top: .5rem;
+}
+
+form input[type="submit"] {
+  background-color: #e50914;
+  display: block;
+  text-align: center;
+  color: #FFFFFF;
+  text-decoration: none;
+  border: none;
+  width: 100%;
+  border-radius: 5px;
+  font-size: .8rem;
+  padding: 1rem 0;
+  transition: background-color .3s ease-in-out;
+  margin-top: 2rem;
+}
+
+form input[type="submit"]:hover {
+  background-color: #b40710;
+  cursor: pointer;
+}
+
+form .actions {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  padding: .5rem 0;
+  margin-bottom: 6rem;
+}
+
+form .actions a,
+form .actions label {
+  font-size: .8rem;
 }

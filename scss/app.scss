@@ -74,11 +74,25 @@ form {
             position: absolute;
             top: 1.3rem;
             left: 1rem;
+            font-size: .9rem;
+            transition: font-size .2s ease, top .2s ease;
         }
 
         input {
             padding: 1.3rem 1rem .9rem 1rem;
             flex: 1;
+            background-color: $gray;
+            border: none;
+            border-radius: 5px;
+
+            &:focus {
+                background-color: $gray3;
+
+                +label {
+                    font-size: .6rem;
+                    top: .5rem;
+                }
+            }
         }
     }
 }
