@@ -45,3 +45,47 @@ a:hover {
     margin-left: 2rem;
   }
 }
+
+@media only screen and (min-width: 768px) {
+  .login-form {
+    background-color: rgba(0, 0, 0, 0.75);
+    max-width: 450px;
+    margin: 3rem auto 4rem auto;
+    padding: 2rem 4rem;
+    border-radius: 10px;
+  }
+}
+
+form legend {
+  color: #FFFFFF;
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin: 2rem 0;
+}
+
+form .field {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: .8rem;
+  position: relative;
+}
+
+form .field span {
+  position: absolute;
+  right: 1rem;
+  top: 1rem;
+  text-transform: uppercase;
+}
+
+form .field input {
+  padding: 1.3rem 1rem .9rem 1rem;
+  -webkit-box-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  background-color: #323232;
+  border: none;
+  border-radius: 5px;
+  color: #FFFFFF;
+  font-size: 1.2rem;
+}
