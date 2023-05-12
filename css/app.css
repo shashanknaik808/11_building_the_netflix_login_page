@@ -9,6 +9,14 @@ html {
   box-sizing: inherit;
 }
 
+.alert {
+  color: #e87c03;
+  display: block;
+  margin-bottom: 1rem;
+  text-align: center;
+  font-size: .8rem;
+}
+
 body {
   background-color: #000000;
   color: #8c8c8c;

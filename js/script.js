@@ -22,4 +22,17 @@ function validateInput(e) {
     }
 
     //   console.log(classes);
+
+
+    // generate or remove the alert
+    if (classes === 'not-valid') {
+        const errorDiv = document.createElement('div');
+        errorDiv.appendChild(document.createTextNode('This field is mandatory'));
+        errorDiv.classList.add('alert');
+
+        console.log(errorDiv);
+
+        // inject the error inside the dom, before the next field
+        e.target.parentElement.parentElement.insertBefore(errorDiv, e.target.parentElement.nextElementSibling);
+    }
 }
