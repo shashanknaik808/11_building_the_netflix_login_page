@@ -52,3 +52,28 @@ function validateInput(e) {
         }
     }
 }
+
+// Show or hide the password
+const togglePassword = document.querySelector('.toggle-password');
+togglePassword.addEventListener('click', e => {
+
+    const passwordInput = document.querySelector('#password');
+
+    // check if the show class exists on the span element
+    if (e.target.classList.contains('show')) {
+        // add a show class
+        e.target.classList.remove('show');
+        // change the text for the span to Hide
+        e.target.textContent = 'Hide';
+        // change the type of the input to text
+        passwordInput.type = 'text';
+    } else {
+        // add a show class
+        e.target.classList.add('show');
+        // change the text for the span to Show
+        e.target.textContent = 'Show';
+        // change the type of the input to password
+        passwordInput.type = 'password';
+    }
+
+})
